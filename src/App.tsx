@@ -5,7 +5,7 @@ import { createServer, Model } from 'miragejs';
 import Modal from 'react-modal';
 import { useState } from "react";
 import { NewTransactionModal } from "./components/NewTransactionModal";
-import { TransactionsContext, TransactionsProvider } from "./TransactionsContext";
+import { TransactionsProvider } from "./hooks/TransactionsContext";
 
 Modal.setAppElement('#root');
 
@@ -30,7 +30,7 @@ createServer({
           title: 'Teste',
           type: 'withdraw',
           category: 'teste',
-          amount: 5000,
+          amount: -5000,
           createdAt: new Date('2023-05-31 13:00:00'),
         }
       ]
