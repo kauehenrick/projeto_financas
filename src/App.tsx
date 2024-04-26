@@ -30,7 +30,7 @@ createServer({
           title: 'Teste',
           type: 'withdraw',
           category: 'teste',
-          amount: -5000,
+          amount: 5000,
           createdAt: new Date('2023-05-31 13:00:00'),
         }
       ]
